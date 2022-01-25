@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!--enlazamos con font awesome para extraer iconos-->
+    <script src="https://kit.fontawesome.com/c5fc2c849f.js" crossorigin="anonymous"></script>
+    <!--Enlaces-->
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/nosotros.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Comida <span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navegation">
+            <li><a href="index.html" onclick="toggleMenu();">Principal</a></li>
+            <li><a href="nosotros.html" onclick="toggleMenu();">Sobre Nosotros</a></li>
+            <li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="expertos.html" onclick="toggleMenu();">Expertos</a></li>
+            <li><a href="testimonios.html" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="contacto.html" onclick="toggleMenu();">Contacto</a></li>
+        </ul>
+    </header>
+    <section class="menu">
+        <div class="titleT">
+            <h2 class="title">Nuestro <span>M</span>enu</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nihil hic temporibus recusandae vero sed consequatur veniam quod exercitationem, provident aliquid earum quam. Saepe est officia quis, architecto quos velit!</p>
+        </div>
+        
+        <div class="content">
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/ensalada.png">
+                </div>
+                <div class="text">
+                    <h3>Ensaladas</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/sopa.png">
+                </div>
+                <div class="text">
+                    <h3>Sopa</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/pasta.png">
+                </div>
+                <div class="text">
+                    <h3>Pasta</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/bebidas.png">
+                </div>
+                <div class="text">
+                    <h3>Bebidas</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/postre.png">
+                </div>
+                <div class="text">
+                    <h3>Postres</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgB">
+                    <img src="img/snacks.png">
+                </div>
+                <div class="text">
+                    <h3>Snaks</h3>
+                </div>
+            </div>
+        </div>
+        <div class="titleT">
+            <a href="#" class="btn">Ver Mas</a>
+        </div>
+    </section>
+    <!--la barra de navegación se adhiere a la parte superior de la página incluso después de que el usuario haga scroll-->
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle=document.querySelector('.menuToggle');
+            const navegation=document.querySelector('.navegation');
+            menuToggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

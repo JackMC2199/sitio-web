@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <!--enlazamos con font awesome para extraer iconos-->
+    <script src="https://kit.fontawesome.com/c5fc2c849f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/nosotros.css ">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Comida <span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navegation">
+            <li><a href="index.html" onclick="toggleMenu();">Principal</a></li>
+            <li><a href="nosotros.html" onclick="toggleMenu();">Sobre Nosotros</a></li>
+            <li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="expertos.html" onclick="toggleMenu();">Expertos</a></li>
+            <li><a href="testimonios.html" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="contacto.html" onclick="toggleMenu();">Contacto</a></li>
+        </ul>
+    </header>
+    <div>
+        <h2 class="title"><span>S</span>obre nosotros</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sed rerum quos exercitationem nesciunt qui doloremque at illum ratione porro, maiores perferendis, nemo, libero enim harum quidem iure culpa repellendus.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit perferendis earum numquam ipsam corporis minus reprehenderit dolorum, labore, aspernatur ipsa rem, id repudiandae iusto culpa! Modi voluptatibus necessitatibus quasi unde.</p>
+    </div>
+    <div class="imgN">
+        <img src="img/nosotros.png">
+    </div>
+    <!--la barra de navegación se adhiere a la parte superior de la página incluso después de que el usuario haga scroll-->
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle=document.querySelector('.menuToggle');
+            const navegation=document.querySelector('.navegation');
+            menuToggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
